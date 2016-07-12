@@ -2,6 +2,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created on 0012, July, 12.
  */
@@ -10,6 +12,7 @@ public class InvokeBrowser {
         System.setProperty("webdriver.chrome.driver", "D:\\apps\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("http://techno-geek.co.uk/SeleniumPractice/Form2.html");
 //        driver.get("http://techno-geek.co.uk/SeleniumPractice/Form.html");
 //        driver.get("http://techno-geek.co.uk/callmycab/");
