@@ -20,6 +20,7 @@ public class InvokeBrowser {
         driver.findElement(By.xpath(".//*[@id='development']")).click();
         driver.findElement(By.xpath(".//*[@id='development']")).click();
         System.out.println(driver.findElement(By.xpath(".//*[@id='development']")).isSelected());
+        driver.findElement(By.xpath(".//*[@id='under_13']")).click();
 
 //        driver.findElement(By.xpath("//input[@id='email']")).sendKeys("test@test.test");
 //        driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Testname");
